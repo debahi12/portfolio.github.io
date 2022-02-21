@@ -1,0 +1,245 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+
+}
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+nav.navigationbar{
+     display:flex;
+     justify-content: space-between;
+     width: 100vw;
+     height: 100px;
+     position: sticky;
+
+}
+label.logo{
+    display: flex;
+    align-items: center;
+    font-size: 40px;
+    font-weight: bolder;
+    position: relative;
+    left: 55px;
+    margin-right: 50px;
+    background: rgb(187, 243, 229);
+    padding: 5px 25px;
+    border-radius: 30px;
+    top: 10px;
+    box-shadow: -5px 15px 25px  rgb(73, 98, 99);
+    margin-left: 20px;
+}
+ul.navigation{
+    display: flex;
+    align-items: center;
+    margin: 0px 9%;
+}
+
+ul.navigation li{
+    padding: 6px 8px;
+    text-transform: capitalize;
+
+}
+
+li a{
+    color: rgb(110, 123, 124);
+    font-size: 14px;
+    transition: 0.5s;
+    border: solid rgb(93, 245, 220);
+    margin: 0px 7px;
+    border-radius: 10px;
+    padding: 6px 8px;
+    box-shadow: -5px 10px 10px rgb(95, 112, 104);
+    background-color: rgba(136, 241, 241, 0.521);
+}
+    
+li a:hover{
+    font-size: 18px;
+    border-radius: 15px;
+
+}
+div.container{
+    height: 80%;
+    width: 100%;
+    position: relative;
+    top: 150px;
+}
+.container-inner{
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    justify-content: space-between;
+
+}
+div.image{
+    width: 75%;
+    height: 100%;
+    border-radius: 30px;
+    box-shadow: -5px 20px 30px black;
+    margin-left: 50px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    
+}
+img.debashis{
+    position: relative;
+    top: -50px;
+    
+
+}
+
+div.about-me{
+    display: flex;
+    flex-direction: column;
+    max-width: 70% ;
+    min-width: 30%;
+    justify-content: center;
+    border-radius: 30px;
+    position: relative;
+    left: 10%;
+    margin-right: 30px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: -5px 10px 25px black;
+
+}
+h3.first{
+    font-size: 400%;
+    position: relative;
+    top: -100px;
+    color: black;
+    transition: 0.1s;
+    cursor: pointer;
+    background:  rgba(136, 241, 241, 0.521) ;
+    border-radius: 15px;
+    padding: 6px;
+
+}
+
+h3.first:hover{
+    font-size: 430%;
+    position: relative;
+    top: -100px;
+    color: black;
+    box-shadow: 5px 10px 20px black;
+    display: flex;
+    border-radius: 15px;
+    padding: 6px;
+}
+p.iam{
+    font-size: 300%;
+    position: relative;
+    top: -80px;
+    left: 5%;
+    cursor: pointer;
+    transition: 0.3s;
+
+}
+p.iam:hover{
+
+    font-size: 320%;
+}
+
+p.deb{
+    top: -60px;
+    position: relative;
+    font-size: 150%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    height: 20%;
+    min-width: 90%;
+    box-shadow: 5px 10px 20px black;
+    background: rgba(136, 241, 241, 0.521);
+    transition: 0.3s;
+    cursor: pointer;
+}
+p.deb:hover{
+    font-size: 160%;
+    height: 25%;
+    width: 330px;
+}
+@media only screen and (max-width:1000px){
+
+nav.navigationbar{
+        flex-direction: column;
+        top: 70px;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        display: flex;
+    }
+ul.navigation{
+    flex-direction: column;
+    top:100px;
+    position: relative;
+    width: 70vw;
+    left: -20px;
+    display: flex;
+    box-shadow: -10px 10px 30px black;
+    border-radius: 40px;
+
+}
+label.logo{
+    top: 60px;
+    padding: 20px ;
+    left: -5px;
+
+
+}
+div.container{
+    top: 350px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    overflow: hidden;
+}
+.container-inner{
+    display: grid;
+    grid-template-rows: 2fr 2fr;
+    grid-template-columns: none;
+    position: relative;
+    left: -20px;
+    grid-gap:120px;
+    
+}
+div.image{
+    width: 90%;
+    height: 100%;
+    border-radius: 30px;
+    box-shadow: -5px 20px 30px black;
+    margin-left: 50px;
+    top: 85px;
+}
+div.about-me{
+    max-width: 90%;
+    min-width: 40%;
+    height: 100%;
+    border-radius: 30px;
+    box-shadow: -5px 20px 30px black;
+    margin-left: 50px;
+    left: 3%;
+}
+p.iam{
+  font-size: 200%;
+  left: -2%;
+  top: -60px;
+}
+p.iam:hover{
+    font-size: 230%;
+}
+p.deb{
+    top: 5px;
+}
+li{
+    margin: 10px 0px;
+}
+li a{
+    padding: 6px 25px;
+}
+}
